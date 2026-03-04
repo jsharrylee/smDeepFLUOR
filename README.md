@@ -21,7 +21,6 @@ The smDeepFLUOR workflow consists of the following steps:
 5. Data standardization
 6. Model training
 7. Model validation
-8. Inference
 
 ------------------------------------------------------------------------
 
