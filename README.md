@@ -12,6 +12,26 @@ To reproduce the environment:
 
 Processing pipeline
 
+The smDeepFLUOR workflow consists of the following steps:
+0. Subtract background (Fiji imagJ)
+1. Single-particle tracking
+2. Single-particle cropping
+3. Training/test dataset split
+4. Data loading
+5. Data standardization
+6. Model training
+7. Model validation
+8. Inference
+
+------------------------------------------------------------------------
+
+0. Subtract background (Fiji ImagJ)
+
+1)  Open Fiji ImageJ
+    Open tiff file with Fiji ImageJ → Process → Subtract background → Rolling ball radius (4.0) pixels → Save processed tiff
+
+------------------------------------------------------------------------
+
 1. Single particle cropping
 
 Particle tracking with Fiji ImageJ
@@ -36,6 +56,8 @@ Displacement: 1 – maximum jump distance
 
 4)  Extract Data
     Click All Trajectories to Table → data exported as CSV file
+
+Output: Particle tracking information CSV file.
 
 ------------------------------------------------------------------------
 
