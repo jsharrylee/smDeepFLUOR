@@ -35,11 +35,11 @@ The smDeepFLUOR workflow consists of the following steps:
 
 Particle tracking with Fiji ImageJ
 
-1)  Open Particle tracker
+-  Open Particle tracker
     Open tiff file with Fiji ImageJ → Plugins → Mosaic → Particle
     Tracker
 
-2)  Particle tracker parameters
+-  Particle tracker parameters
 
 Radius: 3 – particle size
 Cutoff: 0.001 – size variation
@@ -51,9 +51,9 @@ Displacement: 1 – maximum jump distance
 
 (Optional) Use Preview Detected to confirm detected particles.
 
-3)  Run
+-  Run
 
-4)  Extract Data
+-  Extract Data
     Click All Trajectories to Table → data exported as CSV file
 
 Output: Particle tracking information CSV file.
