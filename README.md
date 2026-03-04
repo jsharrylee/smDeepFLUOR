@@ -22,6 +22,8 @@ The smDeepFLUOR workflow consists of the following steps:
 6. Model training
 7. Model validation
 
+smDeepFLUOR.ipynb for tutorial/demo. 
+
 ------------------------------------------------------------------------
 
 0. Subtract background (Fiji ImagJ)
