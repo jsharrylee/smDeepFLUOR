@@ -22,7 +22,7 @@ The smDeepFLUOR workflow consists of the following steps:
 6. Model training
 7. Model validation
 
-smDeepFLUOR.ipynb for tutorial/demo. 
+smDeepFLUOR.ipynb for tutorial/demo. Example experimental data at Example_training_test_data.zip.
 
 ------------------------------------------------------------------------
 
