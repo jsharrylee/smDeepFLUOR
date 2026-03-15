@@ -147,3 +147,53 @@ Run the eighth cell “Model validation”.
     root_dir = r'root_folder where validation data are'
 
 Output: summary of predictions for the validation dataset.
+
+
+------------------------------------------------------------------------
+
+## Model Card
+
+### Model description
+smDeepFLUOR is a 3D convolutional neural network designed to classify
+spatiotemporal fluorescence patterns from single-molecule TIRF microscopy
+data. The model operates on small fluorescence image cubes extracted from
+single-molecule trajectories and identifies subtle differences in emission
+patterns that are not easily distinguishable by conventional analysis.
+
+### Input
+The model takes fluorescence image cubes with dimensions **7 × 7 × N**
+pixels as input, where N represents the temporal depth of the image stack
+(e.g., N = 10 in the default configuration).
+
+### Output
+The network outputs classification probabilities for two classes
+(e.g., gap vs. nick DNA states) using a softmax layer.
+
+### Training data
+The model was trained on experimentally acquired single-molecule
+fluorescence datasets obtained using TIRF microscopy with Cy3, Cy5,
+or mNeonGreen fluorophores. Input cubes were extracted from particle
+trajectories using the preprocessing pipeline described above.
+
+### Performance
+Typical classification accuracy ranges from approximately **85–95%**
+depending on the dataset and imaging conditions. Performance may vary
+depending on fluorophore choice, signal-to-noise ratio, and temporal
+window length.
+
+### Intended use
+The model is intended for classification of spatiotemporal fluorescence
+patterns in single-molecule imaging datasets similar to those described
+in the manuscript.
+
+### Limitations
+Performance may decrease when applied to datasets acquired under
+substantially different imaging conditions, fluorophores, or labeling
+geometries. The model is not intended for general image classification
+tasks outside single-molecule fluorescence analysis.
+
+### Implementation
+The model is implemented in **TensorFlow** and trained using **Python 3.9**.
+Training in the manuscript was performed on **NVIDIA A100 GPUs** using
+Google Colab Pro.
+
